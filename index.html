@@ -109,6 +109,37 @@
       align-items: center;
       margin-bottom: 1.5rem;
     }
+
+    #chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 250px;
+      z-index: 999;
+    }
+
+    #chatbot input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .scorecard {
+      border: 2px solid #2c5282;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      background-color: #edf2f7;
+    }
+
+    .scorecard h3 {
+      color: #2c5282;
+    }
   </style>
 </head>
 <body>
@@ -128,55 +159,76 @@
 
   <div class="container">
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>Hi, I’m Amit – a professional IB Maths tutor with 20+ years of experience. I specialize in guiding students through the unique challenges of the IB curriculum, whether they're new to the program or striving for a 7.</p>
-      <p>My services are tailored for:</p>
-      <ul>
-        <li>✔️ IB newcomers transitioning from CBSE, ICSE, IGCSE, or other boards</li>
-        <li>✔️ Students looking for regular year-round support</li>
-        <li>✔️ Learners preparing for final exams with focused crash courses</li>
-        <li>✔️ Flexible scheduling to accommodate different time zones</li>
-      </ul>
+      <h2>About</h2>
+      <p>With over 20 years of experience, I provide customized tutoring for IB Maths that helps students gain clarity and confidence. My approach supports a wide range of learners, especially those transitioning from national or international boards like CBSE, ICSE, or IGCSE.</p>
     </section>
 
-    <section class="section">
-      <h2>IB Curriculum Structure (At a Glance)</h2>
-      <p>The IB Mathematics curriculum offers two pathways at both SL and HL levels:</p>
+    <section id="courses" class="section">
+      <h2>Courses</h2>
       <ul>
-        <li><strong>Analysis and Approaches (AA)</strong>: Theoretical, calculus-intensive, ideal for engineering and math-heavy university paths.</li>
-        <li><strong>Applications and Interpretation (AI)</strong>: Practical, data-driven, ideal for business, economics, and social sciences.</li>
+        <li><strong>IB Maths: Analysis and Approaches (AA) - SL/HL</strong>: Focus on calculus, functions, and abstract mathematics.</li>
+        <li><strong>IB Maths: Applications and Interpretation (AI) - SL/HL</strong>: Practical statistics, modeling, and data application.</li>
+        <li>Full support for Internal Assessment (IA) projects and mock exam preparation.</li>
       </ul>
-      <p>Each pathway includes an Internal Assessment (IA), timed exams, and rigorous conceptual understanding.</p>
     </section>
 
     <section id="programs" class="section">
-      <h2>Crash Courses & Regular Tutoring</h2>
-      <p><strong>Crash Course:</strong> Fast-paced, intensive prep for exams. Includes mock tests, past paper reviews, and IA support. Ideal for last-minute readiness.</p>
-      <p><strong>Regular Tutoring:</strong> Weekly sessions throughout the year to build a solid foundation, keep up with school, and get ahead.</p>
-      <p><strong>Flexible Hours:</strong> Evening, weekend, and custom time slots available to suit international schedules.</p>
+      <h2>Programs</h2>
+      <p><strong>Crash Courses:</strong> Targeted revision before exams with past paper drilling and IA polishing.</p>
+      <p><strong>Regular Tutoring:</strong> Weekly concept building, problem-solving, and exam skills over the year.</p>
+      <p>Flexible scheduling for students across different time zones.</p>
     </section>
 
     <section id="testimonials" class="section">
-      <h2>What Students Say</h2>
+      <h2>Testimonials</h2>
       <div class="testimonial">
         <img class="testimonial-img" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
-        <p><em>“Mr. Amit is a phenomenal tutor. Thanks to his HL AA coaching, I improved from a 4 to a solid 7. His ability to explain tough topics in a relatable way made all the difference.”</em> – Sarah, Class of 2023</p>
+        <p><em>“Mr. Amit is a phenomenal tutor. Thanks to his HL AA coaching, I improved from a 4 to a solid 7.”</em> – Sarah</p>
       </div>
       <div class="testimonial">
         <img class="testimonial-img" src="https://randomuser.me/api/portraits/men/32.jpg" alt="James">
-        <p><em>“Amit’s methodical approach and detailed exam strategies gave me the edge I needed. His guidance during my IA was especially valuable.”</em> – James, Class of 2024</p>
+        <p><em>“His detailed exam strategies and IA help were invaluable. Highly recommend for any IB student.”</em> – James</p>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-img" src="https://randomuser.me/api/portraits/women/55.jpg" alt="Priya">
+        <p><em>“The transition from ICSE to IB was tough, but Amit sir made it manageable. I felt confident during every assessment.”</em> – Priya</p>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-img" src="https://randomuser.me/api/portraits/men/60.jpg" alt="Rohan">
+        <p><em>“Crash course saved my final exams! I scored 7 in Math AA HL. Couldn't have done it without him.”</em> – Rohan</p>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-img" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily">
+        <p><em>“Excellent tutoring. The flexible timings and personalized attention helped me stay on track with school.”</em> – Emily</p>
+      </div>
+
+      <div class="scorecard">
+        <h3>AI-Generated Scorecard</h3>
+        <p><strong>Name:</strong> Rohan Malhotra</p>
+        <p><strong>School:</strong> Global International School</p>
+        <p><strong>IB Year:</strong> 2024</p>
+        <p><strong>Mathematics: AA HL – Score: <span style="color: green; font-weight: bold;">7</span></strong></p>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <h2>Get in Touch</h2>
+      <h2>Contact</h2>
       <p><strong>Phone:</strong> <a href="tel:+917905228854">+91 79052 28854</a></p>
       <p><strong>Email:</strong> <a href="mailto:amitait2000@gmail.com">amitait2000@gmail.com</a></p>
       <div class="cta">
-        <p>Ready to start your IB Maths journey with confidence? Book a session now and ask about our early bird discounts!</p>
-        <a href="mailto:amitait2000@gmail.com">Schedule a Free Consultation</a>
+        <p>Book a session or ask about our early bird discount. Flexible hours available!</p>
+        <a href="mailto:amitait2000@gmail.com">Book Now</a>
       </div>
     </section>
+  </div>
+
+  <div id="chatbot">
+    <strong>Have questions?</strong>
+    <form action="mailto:amitait2000@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="message" placeholder="Your Query" required>
+      <input type="submit" value="Send">
+    </form>
   </div>
 
   <footer>
