@@ -77,6 +77,18 @@
       font-weight: bold;
     }
 
+    .blink {
+      animation: blink-animation 1.5s steps(5, start) infinite;
+      color: red;
+      font-weight: bold;
+    }
+
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
     footer {
       background-color: #2c5282;
       color: white;
@@ -103,11 +115,13 @@
   <header>
     <h1>IB Mathematics Tutoring by Amit</h1>
     <p>Empowering IB students with expert guidance and proven strategies for over 20 years</p>
+    <p class="blink">🎉 Early Bird Discount – Limited Slots Available!</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#services">Courses</a>
+    <a href="#courses">Courses</a>
+    <a href="#programs">Programs</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -115,28 +129,31 @@
   <div class="container">
     <section id="about" class="section">
       <h2>About Me</h2>
-      <p>Hello, I'm Amit — a seasoned mathematics educator with over two decades of experience specializing in the International Baccalaureate (IB) curriculum. I have successfully mentored hundreds of students through the demanding IB Mathematics program, consistently helping them achieve top-tier scores of 6 and 7.</p>
-      <p><strong>Why Choose My Tutoring Services?</strong></p>
+      <p>Hi, I’m Amit – a professional IB Maths tutor with 20+ years of experience. I specialize in guiding students through the unique challenges of the IB curriculum, whether they're new to the program or striving for a 7.</p>
+      <p>My services are tailored for:</p>
       <ul>
-        <li>✔️ 20+ years of dedicated IB Mathematics experience</li>
-        <li>✔️ Comprehensive coverage of AI and AA, at both SL and HL</li>
-        <li>✔️ Tailored lesson plans based on student needs and goals</li>
-        <li>✔️ Extensive exam preparation, IA guidance, and real-time performance tracking</li>
+        <li>✔️ IB newcomers transitioning from CBSE, ICSE, IGCSE, or other boards</li>
+        <li>✔️ Students looking for regular year-round support</li>
+        <li>✔️ Learners preparing for final exams with focused crash courses</li>
+        <li>✔️ Flexible scheduling to accommodate different time zones</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Understanding IB Mathematics Challenges</h2>
-      <p>IB Mathematics is renowned for its rigorous curriculum and analytical depth. Many students find it challenging to manage the abstract reasoning, problem-solving under time constraints, and the high expectations of Internal Assessments. Through structured instruction and a personalized learning approach, I help students confidently navigate these complexities and build lasting mathematical understanding.</p>
+      <h2>IB Curriculum Structure (At a Glance)</h2>
+      <p>The IB Mathematics curriculum offers two pathways at both SL and HL levels:</p>
+      <ul>
+        <li><strong>Analysis and Approaches (AA)</strong>: Theoretical, calculus-intensive, ideal for engineering and math-heavy university paths.</li>
+        <li><strong>Applications and Interpretation (AI)</strong>: Practical, data-driven, ideal for business, economics, and social sciences.</li>
+      </ul>
+      <p>Each pathway includes an Internal Assessment (IA), timed exams, and rigorous conceptual understanding.</p>
     </section>
 
-    <section id="services" class="section">
-      <h2>IB Mathematics Courses</h2>
-      <ul>
-        <li><strong>Mathematics: Analysis and Approaches (AA)</strong> – Designed for students with a strong interest in pure mathematics, especially those aiming for university programs in math-heavy disciplines. Covers algebra, calculus, and formal mathematical reasoning.</li>
-        <li><strong>Mathematics: Applications and Interpretation (AI)</strong> – Geared towards students interested in practical applications of mathematics. Emphasizes statistics, modeling, and the use of technology to solve problems.</li>
-      </ul>
-      <p>Each course is available at both Standard Level (SL) and Higher Level (HL), and I provide expert tutoring for all variants, ensuring clarity, confidence, and high performance.</p>
+    <section id="programs" class="section">
+      <h2>Crash Courses & Regular Tutoring</h2>
+      <p><strong>Crash Course:</strong> Fast-paced, intensive prep for exams. Includes mock tests, past paper reviews, and IA support. Ideal for last-minute readiness.</p>
+      <p><strong>Regular Tutoring:</strong> Weekly sessions throughout the year to build a solid foundation, keep up with school, and get ahead.</p>
+      <p><strong>Flexible Hours:</strong> Evening, weekend, and custom time slots available to suit international schedules.</p>
     </section>
 
     <section id="testimonials" class="section">
@@ -152,12 +169,12 @@
     </section>
 
     <section id="contact" class="section">
-      <h2>Contact Information</h2>
+      <h2>Get in Touch</h2>
       <p><strong>Phone:</strong> <a href="tel:+917905228854">+91 79052 28854</a></p>
       <p><strong>Email:</strong> <a href="mailto:amitait2000@gmail.com">amitait2000@gmail.com</a></p>
       <div class="cta">
-        <p>Ready to unlock your full IB Maths potential? Reach out today for a free consultation and personalized learning plan.</p>
-        <a href="mailto:amitait2000@gmail.com">Book Your First Session</a>
+        <p>Ready to start your IB Maths journey with confidence? Book a session now and ask about our early bird discounts!</p>
+        <a href="mailto:amitait2000@gmail.com">Schedule a Free Consultation</a>
       </div>
     </section>
   </div>
